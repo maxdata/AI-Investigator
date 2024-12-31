@@ -2,15 +2,11 @@ import pandas as pd
 import asyncio
 import logging
 from pathlib import Path
-from typing import Dict, List
-import json
+from typing import List
 from src.config import (
     INPUT_DIR, 
-    RAW_DIR, 
     LOGS_DIR,
-    LOG_FORMAT,
-    SECTIONS_DIR,
-    REPORTS_DIR
+    LOG_FORMAT    
 )
 from src.scrapers.web_loader import WebLoader
 from src.processors.claude_processor import ClaudeProcessor
